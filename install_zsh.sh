@@ -25,6 +25,8 @@ git clone --depth=1 https://gh.llkk.cc/https://github.com/romkatv/powerlevel10k.
 # 修改 ~/.zshrc 文件
 echo "配置 Zsh..."
 sed -i 's|^ZSH_THEME=.*|ZSH_THEME="powerlevel10k/powerlevel10k"|' ~/.zshrc
+sed -i 's|^# DISABLE_MAGIC_FUNCTIONS="true"|DISABLE_MAGIC_FUNCTIONS="true"|' ~/.zshrc
+
 
 # 确保 plugins 配置包含所需插件
 if grep -q "^plugins=" ~/.zshrc; then
